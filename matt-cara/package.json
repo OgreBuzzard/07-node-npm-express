@@ -1,0 +1,23 @@
+{
+  "name": "matt-cara",
+  "version": "1.0.0",
+  "description": "Matt and Cara's lab project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OgreBuzzard/07-node-npm-express.git"
+  },
+  "author": "Cara Ottmar, Matt Harding",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OgreBuzzard/07-node-npm-express/issues"
+  },
+  "homepage": "https://github.com/OgreBuzzard/07-node-npm-express#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
