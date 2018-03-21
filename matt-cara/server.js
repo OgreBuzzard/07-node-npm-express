@@ -14,14 +14,19 @@ app.use(express.static('./public'));
 
 // Here is our articles route...
 app.get('/articles', (request, response) => {
-  console.log('Articles');
+  console.log('Articles!!!');
   res.send('OMG Articles!!!')
+})
+
+// Here is a route to our new.html
+app.get('/new', (request, response) => {
+  console.log('here is new.html');
+  response.sendFile('/public/new.html', { root: '.' });
 })
 
 // REVIEW: There is a package here called body-parser, which is used by the provided POST route. Be sure to install that and save it as a dependency after you create your package.json.
 
 const bodyParser = require('body-parser').urlencoded({extended: true});
-const PORT = process.env.PORT || 3000;
 
 app.post('/articles', bodyParser, function(request, response) {
   // REVIEW: This route will receive a new article from the form page, new.html, and log that form data to the console. We will wire this up soon to actually write a record to our persistence layer!
